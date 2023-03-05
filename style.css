@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* font-family: 'Kaushan Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+/* -------------HEADER-------------- */
+.header {
+  width: 100%;
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px 10px;
+}
+.header__logo {
+  transition: 0.4s;
+  color: #95e1d3;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+.header__logo:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.header__menu {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+}
+.header__menu-item {
+  margin-left: 60px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #95e1d3;
+  padding: 10px 0;
+  border-bottom: 3px solid #f3818100;
+}
+.header__menu-item:hover {
+  color: #f38181;
+  border-bottom: 3px solid #f38181;
+}
+
+/* -------------HEADER-------------- */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main__content {
+  max-width: 325px;
+  height: 136px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__content-text {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #333333;
+  animation: slide-down 1s linear;
+  margin: 20px auto;
+}
+.main__content-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #333333;
+  animation: slide-up 1s linear;
+  margin: 20px auto;
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(-130px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateX(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+hr {
+  border: 4px solid #f38181;
+  width: 60px;
+  animation: hr 0.5s linear;
+  margin: 20px auto;
+}
+@keyframes hr {
+  0% {
+    border: 0px solid #f38181;
+  }
+  100% {
+    border: 4px solid #f38181;
+  }
+}
+
+.main__block {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  animation: blocks 1s linear;
+}
+@keyframes blocks {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.main__block-card {
+  width: 327px;
+  margin: 20px auto;
+}
+.information {
+  font-size: 15px;
+  color: gray;
+  line-height: 17px;
+  text-align: center;
+  margin: 20px auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gradient__item {
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  opacity: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(239, 139, 138, 0.8) 0%,
+    rgba(229, 207, 130, 0.8) 100%
+  );
+  left: -10px;
+  top: -10px;
+  transition: 0.3s;
+}
+.man {
+  width: 380px;
+  height: 370px;
+  position: relative;
+}
+.man:hover .gradient__item {
+  opacity: 1;
+}
+.name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+}
+.work {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  text-align: center;
+  color: #b6b6b6;
+  margin-top: 10px;
+}
+.line {
+  border: 1px solid #726d6d;
+  width: 1200px;
+  position: relative;
+  top: 300px;
+}
+.content__footer {
+  position: relative;
+  left: 300px;
+  top: 300px;
+  margin: 50px auto;
+}
+.form {
+  width: 380px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 850px;
+  top: 221px;
+  margin: 20px;
+}
+input {
+  width: 230px;
+  height: 40px;
+  border: 1px solid black;
+}
+button {
+  width: 150px;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  background: aquamarine;
+  color: white;
+}
